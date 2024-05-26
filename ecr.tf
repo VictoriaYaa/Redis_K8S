@@ -15,8 +15,8 @@ resource "docker_container" "redis_python_container" {
 
 
 # Create a ECR repository
-resource "aws_ecr_repository" "redis_python_service" {
-  name                 = "redis_python-service"
+resource "aws_ecr_repository" "redis_python" {
+  name                 = "redis_python"
   image_tag_mutability = "MUTABLE"
 
   image_scanning_configuration {
